@@ -73,11 +73,35 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FormKendaraanKeluar.Designer.vb">
+      <DependentUpon>FormKendaraanKeluar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormKendaraanKeluar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormKendaraanMasuk.Designer.vb">
+      <DependentUpon>FormKendaraanMasuk.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormKendaraanMasuk.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormListKendaraan.Designer.vb">
+      <DependentUpon>FormListKendaraan.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormListKendaraan.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="FormLogin.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FormLogin.Designer.vb">
       <DependentUpon>FormLogin.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormStatistik.Designer.vb">
+      <DependentUpon>FormStatistik.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormStatistik.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
