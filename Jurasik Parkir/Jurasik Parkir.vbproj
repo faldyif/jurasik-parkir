@@ -163,11 +163,29 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="FormKendaraanKeluar.resx">
+      <DependentUpon>FormKendaraanKeluar.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormKendaraanMasuk.resx">
       <DependentUpon>FormKendaraanMasuk.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormListKendaraan.resx">
+      <DependentUpon>FormListKendaraan.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormListMember.resx">
+      <DependentUpon>FormListMember.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormListPetugas.resx">
+      <DependentUpon>FormListPetugas.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormLogin.resx">
       <DependentUpon>FormLogin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormTambahMember.resx">
+      <DependentUpon>FormTambahMember.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormTambahPetugas.resx">
+      <DependentUpon>FormTambahPetugas.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
