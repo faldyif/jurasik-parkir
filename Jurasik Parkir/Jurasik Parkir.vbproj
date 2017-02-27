@@ -73,6 +73,18 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FormEditMember.Designer.vb">
+      <DependentUpon>FormEditMember.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormEditMember.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormEditPetugas.Designer.vb">
+      <DependentUpon>FormEditPetugas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormEditPetugas.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="FormKendaraanKeluar.Designer.vb">
       <DependentUpon>FormKendaraanKeluar.vb</DependentUpon>
     </Compile>
@@ -91,6 +103,18 @@
     <Compile Include="FormListKendaraan.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="FormListMember.Designer.vb">
+      <DependentUpon>FormListMember.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormListMember.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormListPetugas.Designer.vb">
+      <DependentUpon>FormListPetugas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormListPetugas.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="FormLogin.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -98,10 +122,28 @@
       <DependentUpon>FormLogin.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="FormSettings.Designer.vb">
+      <DependentUpon>FormSettings.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormSettings.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="FormStatistik.Designer.vb">
       <DependentUpon>FormStatistik.vb</DependentUpon>
     </Compile>
     <Compile Include="FormStatistik.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTambahMember.Designer.vb">
+      <DependentUpon>FormTambahMember.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormTambahMember.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTambahPetugas.Designer.vb">
+      <DependentUpon>FormTambahPetugas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormTambahPetugas.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
