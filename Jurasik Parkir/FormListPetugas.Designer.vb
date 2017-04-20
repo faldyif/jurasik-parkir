@@ -115,7 +115,7 @@ Partial Class FormListPetugas
         'LogoutToolStripMenuItem
         '
         Me.LogoutToolStripMenuItem.Name = "LogoutToolStripMenuItem"
-        Me.LogoutToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.LogoutToolStripMenuItem.Size = New System.Drawing.Size(117, 22)
         Me.LogoutToolStripMenuItem.Text = "Logout"
         '
         'FormListPetugas

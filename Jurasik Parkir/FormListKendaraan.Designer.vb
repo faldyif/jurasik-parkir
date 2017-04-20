@@ -100,7 +100,7 @@ Partial Class FormListKendaraan
         'ListMemberToolStripMenuItem
         '
         Me.ListMemberToolStripMenuItem.Name = "ListMemberToolStripMenuItem"
-        Me.ListMemberToolStripMenuItem.Size = New System.Drawing.Size(162, 22)
+        Me.ListMemberToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.ListMemberToolStripMenuItem.Text = "List Member"
         '
         'ListKendaraanToolStripMenuItem
@@ -112,7 +112,7 @@ Partial Class FormListKendaraan
         'StatistikToolStripMenuItem
         '
         Me.StatistikToolStripMenuItem.Name = "StatistikToolStripMenuItem"
-        Me.StatistikToolStripMenuItem.Size = New System.Drawing.Size(162, 22)
+        Me.StatistikToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.StatistikToolStripMenuItem.Text = "Statistik"
         '
         'UserToolStripMenuItem
