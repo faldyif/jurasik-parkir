@@ -47,7 +47,7 @@ Partial Class FormLogin
         '
         'TextBox2
         '
-        Me.TextBox2.Location = New System.Drawing.Point(109, 38)
+        Me.TextBox2.Location = New System.Drawing.Point(109, 41)
         Me.TextBox2.Name = "TextBox2"
         Me.TextBox2.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
         Me.TextBox2.Size = New System.Drawing.Size(203, 20)
@@ -56,7 +56,7 @@ Partial Class FormLogin
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(12, 41)
+        Me.Label1.Location = New System.Drawing.Point(12, 44)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(53, 13)
         Me.Label1.TabIndex = 3
@@ -64,7 +64,7 @@ Partial Class FormLogin
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(15, 64)
+        Me.Button1.Location = New System.Drawing.Point(15, 79)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(297, 23)
         Me.Button1.TabIndex = 5
@@ -75,7 +75,7 @@ Partial Class FormLogin
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(324, 97)
+        Me.ClientSize = New System.Drawing.Size(324, 111)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.TextBox2)
         Me.Controls.Add(Me.Label1)

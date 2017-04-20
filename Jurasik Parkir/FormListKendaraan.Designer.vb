@@ -28,14 +28,22 @@ Partial Class FormListKendaraan
         Me.Column3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Column4 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Cari = New System.Windows.Forms.Button()
+        Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
+        Me.MenuToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ListMemberToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ListKendaraanToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.StatistikToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.UserToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.LogoutToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
         'DataGridView1
         '
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.DataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Column1, Me.Column2, Me.Column3, Me.Column4})
-        Me.DataGridView1.Location = New System.Drawing.Point(12, 12)
+        Me.DataGridView1.Location = New System.Drawing.Point(12, 33)
         Me.DataGridView1.Name = "DataGridView1"
         Me.DataGridView1.Size = New System.Drawing.Size(343, 150)
         Me.DataGridView1.TabIndex = 0
@@ -66,24 +74,75 @@ Partial Class FormListKendaraan
         '
         'Cari
         '
-        Me.Cari.Location = New System.Drawing.Point(280, 177)
+        Me.Cari.Location = New System.Drawing.Point(280, 190)
         Me.Cari.Name = "Cari"
         Me.Cari.Size = New System.Drawing.Size(75, 23)
         Me.Cari.TabIndex = 1
         Me.Cari.Text = "Cari"
         Me.Cari.UseVisualStyleBackColor = True
         '
+        'MenuStrip1
+        '
+        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.MenuToolStripMenuItem, Me.UserToolStripMenuItem})
+        Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
+        Me.MenuStrip1.Name = "MenuStrip1"
+        Me.MenuStrip1.Size = New System.Drawing.Size(369, 25)
+        Me.MenuStrip1.TabIndex = 3
+        Me.MenuStrip1.Text = "MenuStrip1"
+        '
+        'MenuToolStripMenuItem
+        '
+        Me.MenuToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ListMemberToolStripMenuItem, Me.ListKendaraanToolStripMenuItem, Me.StatistikToolStripMenuItem})
+        Me.MenuToolStripMenuItem.Name = "MenuToolStripMenuItem"
+        Me.MenuToolStripMenuItem.Size = New System.Drawing.Size(53, 21)
+        Me.MenuToolStripMenuItem.Text = "Menu"
+        '
+        'ListMemberToolStripMenuItem
+        '
+        Me.ListMemberToolStripMenuItem.Name = "ListMemberToolStripMenuItem"
+        Me.ListMemberToolStripMenuItem.Size = New System.Drawing.Size(162, 22)
+        Me.ListMemberToolStripMenuItem.Text = "List Member"
+        '
+        'ListKendaraanToolStripMenuItem
+        '
+        Me.ListKendaraanToolStripMenuItem.Name = "ListKendaraanToolStripMenuItem"
+        Me.ListKendaraanToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.ListKendaraanToolStripMenuItem.Text = "List Petugas"
+        '
+        'StatistikToolStripMenuItem
+        '
+        Me.StatistikToolStripMenuItem.Name = "StatistikToolStripMenuItem"
+        Me.StatistikToolStripMenuItem.Size = New System.Drawing.Size(162, 22)
+        Me.StatistikToolStripMenuItem.Text = "Statistik"
+        '
+        'UserToolStripMenuItem
+        '
+        Me.UserToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.LogoutToolStripMenuItem})
+        Me.UserToolStripMenuItem.Name = "UserToolStripMenuItem"
+        Me.UserToolStripMenuItem.Size = New System.Drawing.Size(47, 21)
+        Me.UserToolStripMenuItem.Text = "User"
+        '
+        'LogoutToolStripMenuItem
+        '
+        Me.LogoutToolStripMenuItem.Name = "LogoutToolStripMenuItem"
+        Me.LogoutToolStripMenuItem.Size = New System.Drawing.Size(117, 22)
+        Me.LogoutToolStripMenuItem.Text = "Logout"
+        '
         'FormListKendaraan
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(369, 216)
+        Me.ClientSize = New System.Drawing.Size(369, 223)
+        Me.Controls.Add(Me.MenuStrip1)
         Me.Controls.Add(Me.Cari)
         Me.Controls.Add(Me.DataGridView1)
         Me.Name = "FormListKendaraan"
         Me.Text = "FormListKendaraan"
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.MenuStrip1.ResumeLayout(False)
+        Me.MenuStrip1.PerformLayout()
         Me.ResumeLayout(False)
+        Me.PerformLayout()
 
     End Sub
 
@@ -93,4 +152,11 @@ Partial Class FormListKendaraan
     Friend WithEvents Column3 As DataGridViewTextBoxColumn
     Friend WithEvents Column4 As DataGridViewTextBoxColumn
     Friend WithEvents Cari As Button
+    Friend WithEvents MenuStrip1 As MenuStrip
+    Friend WithEvents MenuToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents ListMemberToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents ListKendaraanToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents StatistikToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents UserToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents LogoutToolStripMenuItem As ToolStripMenuItem
 End Class

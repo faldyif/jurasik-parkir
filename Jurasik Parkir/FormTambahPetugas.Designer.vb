@@ -29,11 +29,13 @@ Partial Class FormTambahPetugas
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.TextBox4 = New System.Windows.Forms.TextBox()
         Me.SuspendLayout()
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(99, 181)
+        Me.Button1.Location = New System.Drawing.Point(116, 221)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(75, 23)
         Me.Button1.TabIndex = 13
@@ -42,14 +44,14 @@ Partial Class FormTambahPetugas
         '
         'TextBox3
         '
-        Me.TextBox3.Location = New System.Drawing.Point(18, 139)
+        Me.TextBox3.Location = New System.Drawing.Point(18, 136)
         Me.TextBox3.Name = "TextBox3"
         Me.TextBox3.Size = New System.Drawing.Size(100, 20)
         Me.TextBox3.TabIndex = 12
         '
         'TextBox2
         '
-        Me.TextBox2.Location = New System.Drawing.Point(18, 86)
+        Me.TextBox2.Location = New System.Drawing.Point(18, 84)
         Me.TextBox2.Name = "TextBox2"
         Me.TextBox2.Size = New System.Drawing.Size(100, 20)
         Me.TextBox2.TabIndex = 11
@@ -64,7 +66,7 @@ Partial Class FormTambahPetugas
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(15, 118)
+        Me.Label3.Location = New System.Drawing.Point(15, 115)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(35, 13)
         Me.Label3.TabIndex = 9
@@ -73,7 +75,7 @@ Partial Class FormTambahPetugas
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(15, 67)
+        Me.Label2.Location = New System.Drawing.Point(15, 65)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(53, 13)
         Me.Label2.TabIndex = 8
@@ -88,11 +90,29 @@ Partial Class FormTambahPetugas
         Me.Label1.TabIndex = 7
         Me.Label1.Text = "Username"
         '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.Location = New System.Drawing.Point(15, 166)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(28, 13)
+        Me.Label4.TabIndex = 14
+        Me.Label4.Text = "Tipe"
+        '
+        'TextBox4
+        '
+        Me.TextBox4.Location = New System.Drawing.Point(18, 186)
+        Me.TextBox4.Name = "TextBox4"
+        Me.TextBox4.Size = New System.Drawing.Size(100, 20)
+        Me.TextBox4.TabIndex = 15
+        '
         'FormTambahPetugas
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(185, 215)
+        Me.ClientSize = New System.Drawing.Size(203, 256)
+        Me.Controls.Add(Me.TextBox4)
+        Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.TextBox3)
         Me.Controls.Add(Me.TextBox2)
@@ -114,4 +134,6 @@ Partial Class FormTambahPetugas
     Friend WithEvents Label3 As Label
     Friend WithEvents Label2 As Label
     Friend WithEvents Label1 As Label
+    Friend WithEvents Label4 As Label
+    Friend WithEvents TextBox4 As TextBox
 End Class
