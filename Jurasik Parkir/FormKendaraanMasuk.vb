@@ -54,7 +54,7 @@ Public Class FormKendaraanMasuk
                     Reader = COMM.ExecuteReader
                     koneksi.Close()
 
-                    MessageBox.Show("Data tersimpan")
+                    MessageBox.Show("Data tersimpan" & Environment.NewLine & "Tempat Parkir: " & Chr(baris + 64) & kolom & " Lantai " & tingkat & Environment.NewLine)
                     nopol.Text = ""
                     tipekendaraan.Text = ""
 
