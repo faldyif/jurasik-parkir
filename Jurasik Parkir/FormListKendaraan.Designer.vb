@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class FormListKendaraan
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,13 +20,10 @@ Partial Class FormListKendaraan
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
+        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
-        Me.Column1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Column2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Column3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Column4 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Cari = New System.Windows.Forms.Button()
         Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
         Me.MenuToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
@@ -44,35 +41,12 @@ Partial Class FormListKendaraan
         'DataGridView1
         '
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Column1, Me.Column2, Me.Column3, Me.Column4})
-        Me.DataGridView1.Location = New System.Drawing.Point(12, 33)
+        Me.DataGridView1.Location = New System.Drawing.Point(12, 27)
         Me.DataGridView1.Name = "DataGridView1"
+        DataGridViewCellStyle2.BackColor = System.Drawing.Color.White
+        Me.DataGridView1.RowsDefaultCellStyle = DataGridViewCellStyle2
         Me.DataGridView1.Size = New System.Drawing.Size(343, 150)
         Me.DataGridView1.TabIndex = 0
-        '
-        'Column1
-        '
-        Me.Column1.HeaderText = "NoPol"
-        Me.Column1.Name = "Column1"
-        Me.Column1.Width = 75
-        '
-        'Column2
-        '
-        Me.Column2.HeaderText = "Jenis"
-        Me.Column2.Name = "Column2"
-        Me.Column2.Width = 75
-        '
-        'Column3
-        '
-        Me.Column3.HeaderText = "Lokasi"
-        Me.Column3.Name = "Column3"
-        Me.Column3.Width = 75
-        '
-        'Column4
-        '
-        Me.Column4.HeaderText = "Waktu"
-        Me.Column4.Name = "Column4"
-        Me.Column4.Width = 75
         '
         'Cari
         '
@@ -102,13 +76,13 @@ Partial Class FormListKendaraan
         'ListMemberToolStripMenuItem
         '
         Me.ListMemberToolStripMenuItem.Name = "ListMemberToolStripMenuItem"
-        Me.ListMemberToolStripMenuItem.Size = New System.Drawing.Size(140, 22)
+        Me.ListMemberToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.ListMemberToolStripMenuItem.Text = "List Member"
         '
         'ListKendaraanToolStripMenuItem
         '
         Me.ListKendaraanToolStripMenuItem.Name = "ListKendaraanToolStripMenuItem"
-        Me.ListKendaraanToolStripMenuItem.Size = New System.Drawing.Size(140, 22)
+        Me.ListKendaraanToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.ListKendaraanToolStripMenuItem.Text = "List Petugas"
         '
         'UserToolStripMenuItem
@@ -121,7 +95,7 @@ Partial Class FormListKendaraan
         'LogoutToolStripMenuItem
         '
         Me.LogoutToolStripMenuItem.Name = "LogoutToolStripMenuItem"
-        Me.LogoutToolStripMenuItem.Size = New System.Drawing.Size(112, 22)
+        Me.LogoutToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.LogoutToolStripMenuItem.Text = "Logout"
         '
         'SettingToolStripMenuItem1
@@ -162,10 +136,6 @@ Partial Class FormListKendaraan
     End Sub
 
     Friend WithEvents DataGridView1 As DataGridView
-    Friend WithEvents Column1 As DataGridViewTextBoxColumn
-    Friend WithEvents Column2 As DataGridViewTextBoxColumn
-    Friend WithEvents Column3 As DataGridViewTextBoxColumn
-    Friend WithEvents Column4 As DataGridViewTextBoxColumn
     Friend WithEvents Cari As Button
     Friend WithEvents MenuStrip1 As MenuStrip
     Friend WithEvents MenuToolStripMenuItem As ToolStripMenuItem

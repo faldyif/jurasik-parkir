@@ -23,15 +23,11 @@ Partial Class FormListPetugas
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
-        Me.Column1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Column2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Column3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
         Me.MenuToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ListMemberToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ListKendaraanToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.StatistikToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.UserToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.LogoutToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -41,26 +37,10 @@ Partial Class FormListPetugas
         'DataGridView1
         '
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Column1, Me.Column2, Me.Column3})
-        Me.DataGridView1.Location = New System.Drawing.Point(12, 36)
+        Me.DataGridView1.Location = New System.Drawing.Point(12, 27)
         Me.DataGridView1.Name = "DataGridView1"
         Me.DataGridView1.Size = New System.Drawing.Size(343, 150)
         Me.DataGridView1.TabIndex = 0
-        '
-        'Column1
-        '
-        Me.Column1.HeaderText = "Username"
-        Me.Column1.Name = "Column1"
-        '
-        'Column2
-        '
-        Me.Column2.HeaderText = "Password"
-        Me.Column2.Name = "Column2"
-        '
-        'Column3
-        '
-        Me.Column3.HeaderText = "Nama"
-        Me.Column3.Name = "Column3"
         '
         'Button1
         '
@@ -76,53 +56,47 @@ Partial Class FormListPetugas
         Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.MenuToolStripMenuItem, Me.UserToolStripMenuItem})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
-        Me.MenuStrip1.Size = New System.Drawing.Size(367, 25)
+        Me.MenuStrip1.Size = New System.Drawing.Size(368, 24)
         Me.MenuStrip1.TabIndex = 2
         Me.MenuStrip1.Text = "MenuStrip1"
         '
         'MenuToolStripMenuItem
         '
-        Me.MenuToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ListMemberToolStripMenuItem, Me.ListKendaraanToolStripMenuItem, Me.StatistikToolStripMenuItem})
+        Me.MenuToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ListMemberToolStripMenuItem, Me.ListKendaraanToolStripMenuItem})
         Me.MenuToolStripMenuItem.Name = "MenuToolStripMenuItem"
-        Me.MenuToolStripMenuItem.Size = New System.Drawing.Size(53, 21)
+        Me.MenuToolStripMenuItem.Size = New System.Drawing.Size(50, 20)
         Me.MenuToolStripMenuItem.Text = "Menu"
         '
         'ListMemberToolStripMenuItem
         '
         Me.ListMemberToolStripMenuItem.Name = "ListMemberToolStripMenuItem"
-        Me.ListMemberToolStripMenuItem.Size = New System.Drawing.Size(162, 22)
+        Me.ListMemberToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.ListMemberToolStripMenuItem.Text = "List Member"
         '
         'ListKendaraanToolStripMenuItem
         '
         Me.ListKendaraanToolStripMenuItem.Name = "ListKendaraanToolStripMenuItem"
-        Me.ListKendaraanToolStripMenuItem.Size = New System.Drawing.Size(162, 22)
+        Me.ListKendaraanToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.ListKendaraanToolStripMenuItem.Text = "List Kendaraan"
-        '
-        'StatistikToolStripMenuItem
-        '
-        Me.StatistikToolStripMenuItem.Name = "StatistikToolStripMenuItem"
-        Me.StatistikToolStripMenuItem.Size = New System.Drawing.Size(162, 22)
-        Me.StatistikToolStripMenuItem.Text = "Statistik"
         '
         'UserToolStripMenuItem
         '
         Me.UserToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.LogoutToolStripMenuItem})
         Me.UserToolStripMenuItem.Name = "UserToolStripMenuItem"
-        Me.UserToolStripMenuItem.Size = New System.Drawing.Size(47, 21)
+        Me.UserToolStripMenuItem.Size = New System.Drawing.Size(42, 20)
         Me.UserToolStripMenuItem.Text = "User"
         '
         'LogoutToolStripMenuItem
         '
         Me.LogoutToolStripMenuItem.Name = "LogoutToolStripMenuItem"
-        Me.LogoutToolStripMenuItem.Size = New System.Drawing.Size(117, 22)
+        Me.LogoutToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.LogoutToolStripMenuItem.Text = "Logout"
         '
         'FormListPetugas
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(367, 222)
+        Me.ClientSize = New System.Drawing.Size(368, 222)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.DataGridView1)
         Me.Controls.Add(Me.MenuStrip1)
@@ -138,15 +112,11 @@ Partial Class FormListPetugas
     End Sub
 
     Friend WithEvents DataGridView1 As DataGridView
-    Friend WithEvents Column1 As DataGridViewTextBoxColumn
-    Friend WithEvents Column2 As DataGridViewTextBoxColumn
-    Friend WithEvents Column3 As DataGridViewTextBoxColumn
     Friend WithEvents Button1 As Button
     Friend WithEvents MenuStrip1 As MenuStrip
     Friend WithEvents MenuToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents ListMemberToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents ListKendaraanToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents StatistikToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents UserToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents LogoutToolStripMenuItem As ToolStripMenuItem
 End Class

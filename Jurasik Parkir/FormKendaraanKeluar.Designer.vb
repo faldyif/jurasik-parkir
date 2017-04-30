@@ -42,9 +42,9 @@ Partial Class FormKendaraanKeluar
         '
         'Splitter1
         '
-        Me.Splitter1.Location = New System.Drawing.Point(0, 25)
+        Me.Splitter1.Location = New System.Drawing.Point(0, 24)
         Me.Splitter1.Name = "Splitter1"
-        Me.Splitter1.Size = New System.Drawing.Size(132, 167)
+        Me.Splitter1.Size = New System.Drawing.Size(132, 168)
         Me.Splitter1.TabIndex = 2
         Me.Splitter1.TabStop = False
         '
@@ -141,7 +141,7 @@ Partial Class FormKendaraanKeluar
         Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.User})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
-        Me.MenuStrip1.Size = New System.Drawing.Size(267, 25)
+        Me.MenuStrip1.Size = New System.Drawing.Size(267, 24)
         Me.MenuStrip1.TabIndex = 13
         Me.MenuStrip1.Text = "MenuStrip1"
         '
@@ -149,19 +149,19 @@ Partial Class FormKendaraanKeluar
         '
         Me.User.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.LogoutToolStripMenuItem, Me.LogoutToolStripMenuItem1})
         Me.User.Name = "User"
-        Me.User.Size = New System.Drawing.Size(47, 21)
+        Me.User.Size = New System.Drawing.Size(42, 20)
         Me.User.Text = "User"
         '
         'LogoutToolStripMenuItem
         '
         Me.LogoutToolStripMenuItem.Name = "LogoutToolStripMenuItem"
-        Me.LogoutToolStripMenuItem.Size = New System.Drawing.Size(162, 22)
+        Me.LogoutToolStripMenuItem.Size = New System.Drawing.Size(151, 22)
         Me.LogoutToolStripMenuItem.Text = "List Kendaraan"
         '
         'LogoutToolStripMenuItem1
         '
         Me.LogoutToolStripMenuItem1.Name = "LogoutToolStripMenuItem1"
-        Me.LogoutToolStripMenuItem1.Size = New System.Drawing.Size(162, 22)
+        Me.LogoutToolStripMenuItem1.Size = New System.Drawing.Size(151, 22)
         Me.LogoutToolStripMenuItem1.Text = "Logout"
         '
         'FormKendaraanKeluar

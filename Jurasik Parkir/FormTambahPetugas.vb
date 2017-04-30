@@ -31,6 +31,10 @@ Public Class FormTambahPetugas
         Finally
             koneksi.Dispose()
         End Try
+
+        Dim form = New FormListPetugas()
+        form.Show()
+        Me.Visible = False
     End Sub
 
     'Private Sub autogenerate()

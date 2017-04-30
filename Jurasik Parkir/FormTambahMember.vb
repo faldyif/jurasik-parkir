@@ -31,6 +31,10 @@ Public Class FormTambahMember
         Finally
             koneksi.Dispose()
         End Try
+
+        Dim form = New FormListMember()
+        form.Show()
+        Me.Visible = False
     End Sub
 
     Private Sub FormTambahMember_Load(sender As Object, e As EventArgs) Handles MyBase.Load

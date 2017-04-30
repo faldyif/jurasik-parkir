@@ -38,7 +38,7 @@ Partial Class FormTambahPetugas
         Me.Button1.Location = New System.Drawing.Point(142, 221)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(75, 23)
-        Me.Button1.TabIndex = 13
+        Me.Button1.TabIndex = 15
         Me.Button1.Text = "Tambah"
         Me.Button1.UseVisualStyleBackColor = True
         '
@@ -48,6 +48,7 @@ Partial Class FormTambahPetugas
         Me.password.Name = "password"
         Me.password.Size = New System.Drawing.Size(199, 20)
         Me.password.TabIndex = 12
+        Me.password.UseSystemPasswordChar = True
         '
         'username
         '
@@ -105,7 +106,7 @@ Partial Class FormTambahPetugas
         Me.role.Location = New System.Drawing.Point(18, 186)
         Me.role.Name = "role"
         Me.role.Size = New System.Drawing.Size(199, 20)
-        Me.role.TabIndex = 15
+        Me.role.TabIndex = 13
         '
         'FormTambahPetugas
         '
