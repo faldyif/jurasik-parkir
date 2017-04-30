@@ -25,9 +25,9 @@ Partial Class FormTambahMember
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
-        Me.TextBox3 = New System.Windows.Forms.TextBox()
+        Me.nopol = New System.Windows.Forms.TextBox()
+        Me.Nm_member = New System.Windows.Forms.TextBox()
+        Me.status = New System.Windows.Forms.TextBox()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
@@ -58,26 +58,26 @@ Partial Class FormTambahMember
         Me.Label3.TabIndex = 2
         Me.Label3.Text = "Status"
         '
-        'TextBox1
+        'nopol
         '
-        Me.TextBox1.Location = New System.Drawing.Point(16, 33)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(100, 20)
-        Me.TextBox1.TabIndex = 3
+        Me.nopol.Location = New System.Drawing.Point(16, 33)
+        Me.nopol.Name = "nopol"
+        Me.nopol.Size = New System.Drawing.Size(100, 20)
+        Me.nopol.TabIndex = 3
         '
-        'TextBox2
+        'Nm_member
         '
-        Me.TextBox2.Location = New System.Drawing.Point(16, 85)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(100, 20)
-        Me.TextBox2.TabIndex = 4
+        Me.Nm_member.Location = New System.Drawing.Point(16, 85)
+        Me.Nm_member.Name = "Nm_member"
+        Me.Nm_member.Size = New System.Drawing.Size(100, 20)
+        Me.Nm_member.TabIndex = 4
         '
-        'TextBox3
+        'status
         '
-        Me.TextBox3.Location = New System.Drawing.Point(16, 138)
-        Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(100, 20)
-        Me.TextBox3.TabIndex = 5
+        Me.status.Location = New System.Drawing.Point(16, 138)
+        Me.status.Name = "status"
+        Me.status.Size = New System.Drawing.Size(100, 20)
+        Me.status.TabIndex = 5
         '
         'Button1
         '
@@ -94,9 +94,9 @@ Partial Class FormTambahMember
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(184, 216)
         Me.Controls.Add(Me.Button1)
-        Me.Controls.Add(Me.TextBox3)
-        Me.Controls.Add(Me.TextBox2)
-        Me.Controls.Add(Me.TextBox1)
+        Me.Controls.Add(Me.status)
+        Me.Controls.Add(Me.Nm_member)
+        Me.Controls.Add(Me.nopol)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
@@ -110,8 +110,8 @@ Partial Class FormTambahMember
     Friend WithEvents Label1 As Label
     Friend WithEvents Label2 As Label
     Friend WithEvents Label3 As Label
-    Friend WithEvents TextBox1 As TextBox
-    Friend WithEvents TextBox2 As TextBox
-    Friend WithEvents TextBox3 As TextBox
+    Friend WithEvents nopol As TextBox
+    Friend WithEvents Nm_member As TextBox
+    Friend WithEvents status As TextBox
     Friend WithEvents Button1 As Button
 End Class

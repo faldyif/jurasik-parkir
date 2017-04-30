@@ -24,8 +24,8 @@ Partial Class FormKendaraanMasuk
     Private Sub InitializeComponent()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
+        Me.nopol = New System.Windows.Forms.TextBox()
+        Me.tipekendaraan = New System.Windows.Forms.ComboBox()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
         Me.UserToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
@@ -51,21 +51,21 @@ Partial Class FormKendaraanMasuk
         Me.Label2.TabIndex = 1
         Me.Label2.Text = "Jenis Kendaraan"
         '
-        'TextBox1
+        'nopol
         '
-        Me.TextBox1.Location = New System.Drawing.Point(16, 59)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(100, 20)
-        Me.TextBox1.TabIndex = 2
+        Me.nopol.Location = New System.Drawing.Point(16, 59)
+        Me.nopol.Name = "nopol"
+        Me.nopol.Size = New System.Drawing.Size(121, 20)
+        Me.nopol.TabIndex = 2
         '
-        'ComboBox1
+        'tipekendaraan
         '
-        Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Items.AddRange(New Object() {"Motor", "Mobil"})
-        Me.ComboBox1.Location = New System.Drawing.Point(16, 123)
-        Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(121, 21)
-        Me.ComboBox1.TabIndex = 3
+        Me.tipekendaraan.FormattingEnabled = True
+        Me.tipekendaraan.Items.AddRange(New Object() {"Motor", "Mobil"})
+        Me.tipekendaraan.Location = New System.Drawing.Point(16, 123)
+        Me.tipekendaraan.Name = "tipekendaraan"
+        Me.tipekendaraan.Size = New System.Drawing.Size(121, 21)
+        Me.tipekendaraan.TabIndex = 3
         '
         'Button1
         '
@@ -81,7 +81,7 @@ Partial Class FormKendaraanMasuk
         Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.UserToolStripMenuItem})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
-        Me.MenuStrip1.Size = New System.Drawing.Size(252, 25)
+        Me.MenuStrip1.Size = New System.Drawing.Size(255, 24)
         Me.MenuStrip1.TabIndex = 5
         Me.MenuStrip1.Text = "User"
         '
@@ -89,23 +89,23 @@ Partial Class FormKendaraanMasuk
         '
         Me.UserToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.LogoutToolStripMenuItem})
         Me.UserToolStripMenuItem.Name = "UserToolStripMenuItem"
-        Me.UserToolStripMenuItem.Size = New System.Drawing.Size(47, 21)
+        Me.UserToolStripMenuItem.Size = New System.Drawing.Size(42, 20)
         Me.UserToolStripMenuItem.Text = "User"
         '
         'LogoutToolStripMenuItem
         '
         Me.LogoutToolStripMenuItem.Name = "LogoutToolStripMenuItem"
-        Me.LogoutToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.LogoutToolStripMenuItem.Size = New System.Drawing.Size(112, 22)
         Me.LogoutToolStripMenuItem.Text = "Logout"
         '
         'FormKendaraanMasuk
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(252, 165)
+        Me.ClientSize = New System.Drawing.Size(255, 165)
         Me.Controls.Add(Me.Button1)
-        Me.Controls.Add(Me.ComboBox1)
-        Me.Controls.Add(Me.TextBox1)
+        Me.Controls.Add(Me.tipekendaraan)
+        Me.Controls.Add(Me.nopol)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.MenuStrip1)
@@ -121,8 +121,8 @@ Partial Class FormKendaraanMasuk
 
     Friend WithEvents Label1 As Label
     Friend WithEvents Label2 As Label
-    Friend WithEvents TextBox1 As TextBox
-    Friend WithEvents ComboBox1 As ComboBox
+    Friend WithEvents nopol As TextBox
+    Friend WithEvents tipekendaraan As ComboBox
     Friend WithEvents Button1 As Button
     Friend WithEvents MenuStrip1 As MenuStrip
     Friend WithEvents UserToolStripMenuItem As ToolStripMenuItem

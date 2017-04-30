@@ -1,11 +1,13 @@
-﻿Imports MySql.Data.MySqlClient
+﻿Imports MySql.Data.MySqlClient.MySqlConnection
+Imports MySql.Data.MySqlClient
+
 
 Public Class FormLogin
     Dim koneksi As New MySqlConnection
 
     Private Sub openKoneksi()
         koneksi.ConnectionString =
-        "server=156.67.208.181;user=u5239788_jurasik;password={s]X=Terp}cc;database=u5239788_jurasikparkir"
+        "server=localhost;user=root;password=;database=jurasik"
         koneksi.Open()
     End Sub
 
@@ -20,18 +22,18 @@ Public Class FormLogin
         Dim table As New DataTable
         adapter.Fill(table)
         If (table.Rows.Count.Equals(1)) Then
-            If (table.Rows(0)(3).Equals(1)) Then
+            If (table.Rows(0)(4).Equals(1)) Then
                 Dim form = New FormKendaraanMasuk()
                 form.Show()
-                Me.Close()
-            ElseIf (table.Rows(0)(3).Equals(2)) Then
+                Me.Visible = False
+            ElseIf (table.Rows(0)(4).Equals(2)) Then
                 Dim form = New FormKendaraanKeluar()
                 form.Show()
-                Me.Close()
-            ElseIf (table.Rows(0)(3).Equals(3)) Then
+                Me.Visible = False
+            ElseIf (table.Rows(0)(4).Equals(3)) Then
                 Dim form = New FormListKendaraan()
                 form.Show()
-                Me.Close()
+                Me.Visible = False
             End If
         Else
             MessageBox.Show("Username atau password anda salah!")
