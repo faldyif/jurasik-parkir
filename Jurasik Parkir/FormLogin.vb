@@ -22,15 +22,15 @@ Public Class FormLogin
         Dim table As New DataTable
         adapter.Fill(table)
         If (table.Rows.Count.Equals(1)) Then
-            If (table.Rows(0)(4).Equals(1)) Then
+            If (table.Rows(0)(3).Equals(1)) Then
                 Dim form = New FormKendaraanMasuk()
                 form.Show()
                 Me.Visible = False
-            ElseIf (table.Rows(0)(4).Equals(2)) Then
+            ElseIf (table.Rows(0)(3).Equals(2)) Then
                 Dim form = New FormKendaraanKeluar()
                 form.Show()
                 Me.Visible = False
-            ElseIf (table.Rows(0)(4).Equals(3)) Then
+            ElseIf (table.Rows(0)(3).Equals(3)) Then
                 Dim form = New FormListKendaraan()
                 form.Show()
                 Me.Visible = False
